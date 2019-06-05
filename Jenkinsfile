@@ -15,8 +15,9 @@ stages{
           sh 'docker -v'
           sh 'printenv'
           sh 'sudo yarn'
-          sh 'screen -S pencil -d -m sudo yarn start'
-          sh 'screen -ls'
+          sh 'sudo yarn build'
+          sh 'sudo pm2 restart pencil'
+         
         }
 
        } 
