@@ -16,7 +16,7 @@ stages{
           sh 'printenv'
           sh 'sudo yarn'
           sh 'sudo yarn build'
-          sh 'sudo pm2 restart pencil'
+          sh 'sudo pm2 restart test'
          
         }
 
