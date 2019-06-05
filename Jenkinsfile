@@ -14,9 +14,8 @@ stages{
           echo "Branch: ${env.BRANCH_NAME}"
           sh 'docker -v'
           sh 'printenv'
-          sh 'yarn'
-          sh 'yarn build'
-          sh 'screen -S pencil -d -m yarn start'
+          sh 'sudo yarn'
+          sh 'screen -S pencil -d -m sudo yarn start'
           sh 'screen -ls'
         }
 
